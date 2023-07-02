@@ -1,0 +1,71 @@
+---
+- name: "Install asdf plugins"
+  shell: |
+    asdf plugin-add {{ item }} || exit 0
+  with_items:
+    - direnv
+    - java
+    - gradle
+    - ruby
+    - nodejs
+    - python
+    - awscli
+
+- name: "Install asdf HashiCorp plugins"
+  shell: |
+    asdf plugin-add {{ item }} https://github.com/asdf-community/asdf-hashicorp.git || exit 0
+  with_items:
+    - boundary
+    - consul
+    - levant
+    - nomad
+    - packer
+    - sentinel
+    - serf
+    - terraform
+    - terraform-ls
+    - tfc-agent
+    - vault
+    - waypoint
+
+- name: "Install default direnv"
+  shell: |
+    asdf direnv setup --shell zsh --version latest
+
+- name: "Install default Java"
+  shell: |
+    asdf install java latest:temurin-11
+    asdf global java latest:temurin-11
+
+- name: "Install default Gradle"
+  shell: |
+    asdf install gradle 7.6.1
+    asdf global gradle 7.6.1
+
+- name: "Install default Ruby"
+  shell: |
+    asdf install ruby 3.2.2
+    asdf global ruby 3.2.2
+
+- name: "Install default NodeJS"
+  shell: |
+    asdf install nodejs 18.16.1
+    asdf global nodejs 18.16.1
+
+- name: "Install default Python"
+  shell: |
+    asdf install python 3.11.0
+    asdf global python 3.11.0
+    pip3 install --upgrade pip3
+    pip3 install ansible
+    asdf reshim python
+
+- name: "Install default Terraform"
+  shell: |
+    asdf install terraform 1.4.6
+    asdf global terraform 1.4.6
+
+- name: "Install default AWS CLI from source"
+  shell: |
+    asdf install awscli "ref:$(asdf latest awscli 2)"
+    asdf global awscli "$(asdf latest awscli 2)"
