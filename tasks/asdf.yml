@@ -68,4 +68,4 @@
 - name: "Install default AWS CLI from source"
   shell: |
     asdf install awscli "ref:$(asdf latest awscli 2)"
-    asdf global awscli "$(asdf latest awscli 2)"
+    asdf global awscli "ref:$(asdf latest awscli 2)"
