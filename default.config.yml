@@ -96,9 +96,18 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password-cli
+  - affinity-designer
+  - affinity-photo
+  - affinity-publisher
+  - airfoil
+  - audio-hijack
+  - alfred
   - arc
-  - docker
+  - bartender
+  - downie
+  - devonthink
   - firefox
+  - fission
   - font-fira-code
   - font-fira-code-nerd-font
   - font-iosevka
@@ -108,8 +117,13 @@ homebrew_cask_apps:
   - fork
   - google-chrome
   - iterm2
+  - lunar
+  - macupdater
+  - obsidian
   - owasp-zap
+  - permute
   - postman
+  - soundsource
   - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
@@ -119,7 +133,7 @@ mas_installed_apps:
   - { id: 409201541, name: "Pages" }
   - { id: 409203825, name: "Numbers" }
   - { id: 409183694, name: "Keynote" }
-  # - { id: 497799835, name: "Xcode" }
+  - { id: 497799835, name: "Xcode" }
   - { id: 639968404, name: "Parcel - Delivery Tracking" }
   - { id: 1659154653, name: "Mona for Mastodon" }
   - { id: 1606897889, name: "Consent-O-Matic" }
