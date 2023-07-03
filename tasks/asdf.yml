@@ -34,8 +34,8 @@
 
 - name: "Install default Java"
   shell: |
-    asdf install java latest:temurin-11
-    asdf global java latest:temurin-11
+    asdf install java latest:zulu-11
+    asdf global java latest:zulu-11
 
 - name: "Install default Gradle"
   shell: |

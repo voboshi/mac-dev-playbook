@@ -38,21 +38,27 @@ dockitems_persist:
   - name: "Obsidian"
     path: "/Applications/Obsidian.app/"
     pos: 5
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 6
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app/"
+    pos: 7
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 6
+    pos: 8
   - name: "iTerm"
     path: "/Applications/iTerm.app/"
-    pos: 7
+    pos: 9
   - name: "Fork"
     path: "/Applications/Fork.app/"
-    pos: 8
+    pos: 10
   - name: "Music"
     path: "/Applications/Music.app/"
-    pos: 9
+    pos: 11
   - name: "System Settings"
     path: "/Applications/System Settings.app/"
-    pos: 10
+    pos: 12
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -132,6 +138,7 @@ homebrew_cask_apps:
   - 1password
   - 1password-cli
   - airfoil
+  - android-studio
   - audio-hijack
   - alfred
   - arc
@@ -151,6 +158,7 @@ homebrew_cask_apps:
   - iterm2
   - jetbrains-toolbox
   - keka
+  - logi-options-plus
   - lunar
   - macupdater
   - microsoft-word
