@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: true
 configure_osx: true
 configure_asdf: true
+install_ohmyzsh: true
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
@@ -19,6 +20,7 @@ dockitems_remove:
   - Reminders
   - Notes
   - News
+  - TV
   - 'App Store'
   - Freeform
 dockitems_persist:
@@ -65,8 +67,9 @@ sudoers_custom_config: |
   Defaults        env_keep += "ASDF_DATA_DIR"
 
 dotfiles_repo: https://github.com/voboshi/dotfiles.git
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Projects/Personal/dotfiles
+dotfiles_repo_local_destination: ~/Projects/dotfiles
 dotfiles_files:
   - .zshrc
   - .zshenv
